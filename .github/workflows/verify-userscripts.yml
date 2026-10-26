@@ -1,0 +1,71 @@
+name: Verify public Safari Userscripts channels
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'beta/**'
+      - 'stable/**'
+      - '.github/workflows/verify-userscripts.yml'
+  pull_request:
+    paths:
+      - 'beta/**'
+      - 'stable/**'
+      - '.github/workflows/verify-userscripts.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate version, update URLs and complete scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          repository = "Blacksonny/M2Idle-Companion-Updates"
+          for channel in ("beta", "stable"):
+              root = Path(channel)
+              script = root / "M2Idle-Companion.user.js"
+              metadata = root / "M2Idle-Companion.meta.js"
+              if not script.exists() and not metadata.exists():
+                  print(f"{channel}: noch nicht veröffentlicht")
+                  continue
+              assert script.is_file() and metadata.is_file(), (
+                  f"{channel}: Script und Meta müssen gemeinsam vorhanden sein"
+              )
+              assert script.stat().st_size < 2_000_000, "Script zu groß"
+              assert metadata.stat().st_size < 5_000, "Metadaten zu groß"
+              full = script.read_text(encoding="utf-8")
+              meta = metadata.read_text(encoding="utf-8")
+              assert full.startswith("// ==UserScript==\n"), "Ungültiger Header"
+              assert meta.startswith("// ==UserScript==\n"), "Ungültiger Metadaten-Header"
+              header = full.split("// ==/UserScript==", 1)[0] + "// ==/UserScript==\n\n"
+              assert header == meta, f"{channel}: Metadaten stimmen nicht mit Script überein"
+              assert full.count("// ==UserScript==") == 1, "Doppelte Header"
+              assert "// @match        https://game.m2idle.pl/*" in meta, "Nicht erwartete Domain"
+              assert "// @grant        none" in meta, "Unerwartete Berechtigungen"
+              assert "@require" not in meta, "Remote-Lader nicht zulässig"
+              assert re.search(r"(?m)^// @version\s+\d+\.\d+\.\d+$", meta), "Version fehlt"
+              base = f"https://raw.githubusercontent.com/{repository}/main/{channel}"
+              assert f"// @updateURL    {base}/M2Idle-Companion.meta.js" in meta
+              assert f"// @downloadURL  {base}/M2Idle-Companion.user.js" in meta
+              assert f"// @namespace    https://github.com/Blacksonny/M2Idle-Companion/userscripts/{channel}" in meta
+              for invalid in ("-----BEGIN PRIVATE KEY-----", "-----BEGIN RSA PRIVATE KEY-----"):
+                  assert invalid not in full, "Verdacht auf privaten Schlüssel"
+              print(f"{channel}: Versionsangaben, Metadaten und Downloadpfade geprüft")
+          PY
+          for channel in beta stable; do
+            if [[ -f "$channel/M2Idle-Companion.user.js" ]]; then
+              node --check "$channel/M2Idle-Companion.user.js"
+            fi
+          done
