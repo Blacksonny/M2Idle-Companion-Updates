@@ -1,4 +1,4 @@
-name: Verify public Safari Userscripts channels
+name: Verify public Userscript channels
 
 on:
   push:
