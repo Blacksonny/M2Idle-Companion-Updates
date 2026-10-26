@@ -1,20 +1,13 @@
 # M2Idle Companion – Beta
 
-**Aktuelle Testversion für Safari und Chromium**
+Dieser Kanal bietet die neueste **Testversion** für Safari Userscripts auf iPhone/iPad und für Violentmonkey in Chromium-Browsern am PC.
 
-Dieser Kanal enthält Vorabversionen des M2Idle Companion. Neue Funktionen werden hier vor ihrer stabilen Veröffentlichung bereitgestellt.
+**[Beta-Userscript installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js)**
 
-## Installation
+Neue Versionen lassen sich über **Check Updates** in Userscripts beziehungsweise über die Updateprüfung von Violentmonkey abrufen. Die technischen Versionsinformationen stehen in [M2Idle-Companion.meta.js](M2Idle-Companion.meta.js).
 
-**[M2Idle Companion Beta installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js)**
+Innerhalb aktueller Beta-Pakete lassen sich zusätzliche Build-Lab-Werkzeuge im **Standard-/Testfunktionsmodus** ein- oder ausblenden. Dieser Modus ist **kein Wechsel des installierten Releasekanals**.
 
-- **iPhone und iPad:** Safari mit der Erweiterung **Userscripts** verwenden und die Datei dort hinzufügen.
-- **Windows, macOS und Linux:** In Chrome, Edge, Brave oder einem anderen Chromium-Browser einen Userscript-Manager wie [Violentmonkey](https://violentmonkey.github.io/get-it/) installieren und die Beta-Datei darüber hinzufügen.
+**Bei der einmaligen Umbenennung** von `M2Idle Companion · Safari (Beta)` auf `M2Idle Companion` bitte die Scriptliste prüfen. Wenn der Manager beide Einträge getrennt führt, die ältere Installation deaktivieren oder entfernen. Beta und Stable sowie die separate Companion-Extension dürfen nie parallel auf derselben Spielseite aktiviert sein.
 
-## Aktualisierungen
-
-Neuere Betaversionen werden über den installierten Userscript-Manager angeboten. In **Userscripts** kann die Aktualisierung über **Check Updates** geprüft werden; **Violentmonkey** unterstützt auch automatische Updateprüfungen.
-
-[Versionsinformationen](M2Idle-Companion.meta.js)
-
-**Hinweis:** Nicht gleichzeitig eine ältere Companion-Version oder die separate Companion-Browser-Erweiterung auf derselben Spielseite aktivieren. Vorabversionen können noch Fehler enthalten.
+[Stable-Kanal](../stable/) · [Alle Releases](https://github.com/Blacksonny/M2Idle-Companion/releases)
