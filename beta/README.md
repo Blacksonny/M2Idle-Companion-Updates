@@ -1,21 +1,20 @@
-# Beta – M2Idle Companion
+# M2Idle Companion – Beta
 
-**Safari Userscripts | Öffentlicher Testkanal**
+**Aktuelle Testversion für Safari und Chromium**
 
-Über diesen Kanal werden neue Funktionen des M2Idle Companion vor ihrer stabilen Veröffentlichung zum Testen bereitgestellt.
+Dieser Kanal enthält Vorabversionen des M2Idle Companion. Neue Funktionen werden hier vor ihrer stabilen Veröffentlichung bereitgestellt.
 
 ## Installation
 
-Die derzeit freigegebene Beta-Datei kannst du hier herunterladen:
+**[M2Idle Companion Beta installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js)**
 
-**[M2Idle Companion für Safari installieren](M2Idle-Companion.user.js)**
-
-Öffne die Datei auf deinem iPhone oder iPad mit Safari und füge sie über die Erweiterung **Userscripts** hinzu. Aktiviere nur eine Companion-Version gleichzeitig.
+- **iPhone und iPad:** Safari mit der Erweiterung **Userscripts** verwenden und die Datei dort hinzufügen.
+- **Windows, macOS und Linux:** In Chrome, Edge, Brave oder einem anderen Chromium-Browser einen Userscript-Manager wie [Violentmonkey](https://violentmonkey.github.io/get-it/) installieren und die Beta-Datei darüber hinzufügen.
 
 ## Aktualisierungen
 
-Spätere Beta-Versionen lassen sich über **Check Updates** in der Userscripts-App prüfen. Das installierte Script verweist dafür auf die aktuelle Versionsdatei:
+Neuere Betaversionen werden über den installierten Userscript-Manager angeboten. In **Userscripts** kann die Aktualisierung über **Check Updates** geprüft werden; **Violentmonkey** unterstützt auch automatische Updateprüfungen.
 
-[Versionsinformationen anzeigen](M2Idle-Companion.meta.js)
+[Versionsinformationen](M2Idle-Companion.meta.js)
 
-Betaversionen können noch Fehler enthalten. Rückmeldungen helfen bei der Vorbereitung stabiler Veröffentlichungen.
+**Hinweis:** Nicht gleichzeitig eine ältere Companion-Version oder die separate Companion-Browser-Erweiterung auf derselben Spielseite aktivieren. Vorabversionen können noch Fehler enthalten.
