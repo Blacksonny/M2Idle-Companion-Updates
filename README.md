@@ -19,10 +19,22 @@ Für jeden veröffentlichten Kanal werden die folgenden Dateien angeboten:
 ## Installation auf iPhone und iPad
 
 1. Die Safari-Erweiterung **Userscripts** aktivieren und für `game.m2idle.pl` zulassen.
-2. Im gewünschten Kanal die Datei `M2Idle-Companion.user.js` öffnen bzw. in Userscripts importieren, sobald eine Version veröffentlicht wurde.
-3. Für spätere Versionen in der Userscripts-App **Check Updates** verwenden.
+2. Die Datei `M2Idle-Companion.user.js` aus dem gewünschten Kanal in Userscripts installieren.
+3. Spätere Versionen über **Check Updates** prüfen.
 
-**Stable und Beta bitte nicht gleichzeitig aktivieren.** Verfügbare Downloads erscheinen direkt im jeweiligen Kanalverzeichnis.
+## Installation in Chromium-Browsern am PC
+
+Die Safari-Userscript-Datei kann grundsätzlich auch mit einem Userscript-Manager für **Chrome, Edge, Brave und weitere Chromium-Browser** verwendet werden. Wir empfehlen [Violentmonkey](https://violentmonkey.github.io/get-it/); alternativ eignet sich [Tampermonkey](https://www.tampermonkey.net/).
+
+1. Einen Userscript-Manager im Browser installieren und für die Spielseite aktivieren.
+2. Das [aktuelle Beta-Userscript](beta/M2Idle-Companion.user.js) über die Installationsfunktion des Managers hinzufügen.
+3. Im Userscript-Manager **Aktualisierungen prüfen** verwenden oder dessen automatische Updateprüfung aktivieren.
+
+Die Desktop-Nutzung als Userscript wird derzeit gesondert erprobt. Die vorhandene Browser-Erweiterung als ZIP bleibt weiterhin verfügbar.
+
+**Wichtig:** Nicht gleichzeitig die native M2Idle-Companion-Erweiterung und das Userscript auf derselben Spielseite aktivieren. Auch Beta und Stable dürfen nicht parallel laufen.
+
+Verfügbare Downloads stehen direkt im jeweiligen Kanalverzeichnis.
 
 ## Über das Projekt
 
