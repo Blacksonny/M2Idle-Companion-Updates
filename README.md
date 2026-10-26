@@ -27,7 +27,7 @@ Für jeden veröffentlichten Kanal werden die folgenden Dateien angeboten:
 Die Safari-Userscript-Datei kann grundsätzlich auch mit einem Userscript-Manager für **Chrome, Edge, Brave und weitere Chromium-Browser** verwendet werden. Wir empfehlen [Violentmonkey](https://violentmonkey.github.io/get-it/); alternativ eignet sich [Tampermonkey](https://www.tampermonkey.net/).
 
 1. Einen Userscript-Manager im Browser installieren und für die Spielseite aktivieren.
-2. Das [aktuelle Beta-Userscript](beta/M2Idle-Companion.user.js) über die Installationsfunktion des Managers hinzufügen.
+2. Das [aktuelle Beta-Userscript](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js) über die Installationsfunktion des Managers hinzufügen.
 3. Im Userscript-Manager **Aktualisierungen prüfen** verwenden oder dessen automatische Updateprüfung aktivieren.
 
 Die Desktop-Nutzung als Userscript wird derzeit gesondert erprobt. Die vorhandene Browser-Erweiterung als ZIP bleibt weiterhin verfügbar.
