@@ -1,43 +1,30 @@
-# M2Idle Companion
+# M2Idle Companion – offizielle Userscript-Downloads
 
-**Safari Userscripts – Downloads und Updates**
+**M2Idle Companion** erweitert [M2Idle](https://m2idle.pl/) um freiwillige Marktpreis-, Verkaufs- und Ausrüstungshilfen. Dieses Repository stellt die installierbaren **Userscripts und ihre Update-Metadaten** bereit – für Safari Userscripts auf iPhone/iPad und Violentmonkey in Chromium-Browsern am PC.
 
-Dieses Repository stellt die Veröffentlichungs- und Updatekanäle für die Safari-Version des unabhängigen Projekts **M2Idle Companion** bereit.
+## Installation
 
-## Updatekanäle
-
-| Kanal | Beschreibung | Verzeichnis |
+| Kanal | Für wen? | Download |
 | --- | --- | --- |
-| **Stable** | Reguläre, freigegebene Versionen | [Stable](stable/) |
-| **Beta** | Vorabversionen zum Testen neuer Funktionen | [Beta](beta/) |
+| **Stable** | Regulär freigegebene Funktionen | [Stable installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/stable/M2Idle-Companion.user.js) |
+| **Beta** | Neue Funktionen vorab testen | [Beta installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js) |
 
-Für jeden veröffentlichten Kanal werden die folgenden Dateien angeboten:
+**Safari (iPhone/iPad):** Safari-Erweiterung **Userscripts** aktivieren, für `game.m2idle.pl` zulassen und die gewünschte Datei installieren.
 
-- `M2Idle-Companion.user.js` – installierbares Userscript
-- `M2Idle-Companion.meta.js` – Versionsinformationen für die Updateprüfung
+**Chromium (Windows/macOS/Linux):** [Violentmonkey](https://violentmonkey.github.io/get-it/) installieren, die gewünschte `.user.js` hinzufügen und für `game.m2idle.pl` aktivieren.
 
-## Installation auf iPhone und iPad
+## Updates und Wechsel
 
-1. Die Safari-Erweiterung **Userscripts** aktivieren und für `game.m2idle.pl` zulassen.
-2. Die Datei `M2Idle-Companion.user.js` aus dem gewünschten Kanal in Userscripts installieren.
-3. Spätere Versionen über **Check Updates** prüfen.
+Beide Kanäle verwenden eigene Update- und Downloadadressen. Nach der Installation prüfst du über **Check Updates** (Userscripts) oder die **Updateprüfung** von Violentmonkey auf neue Versionen.
 
-## Installation in Chromium-Browsern am PC
+**Nicht Beta und Stable gleichzeitig aktivieren.** Zum echten Kanalwechsel das bisherige Script deaktivieren oder entfernen, anschließend die andere Ausgabe installieren. Der in aktuellen Beta-Versionen vorhandene Funktionsmodus **Standard/Testfunktionen** ist keine Änderung des Updatekanals.
 
-Die Safari-Userscript-Datei kann grundsätzlich auch mit einem Userscript-Manager für **Chrome, Edge, Brave und weitere Chromium-Browser** verwendet werden. Wir empfehlen [Violentmonkey](https://violentmonkey.github.io/get-it/); alternativ eignet sich [Tampermonkey](https://www.tampermonkey.net/).
+**Einmalige Namensmigration:** Ältere Installationen heißen noch `M2Idle Companion · Safari (Beta/Stable)`. Neue Ausgaben erhalten den browserneutralen Namen `M2Idle Companion`. Nach dem ersten Update die Scriptliste kontrollieren; falls beide Namen als getrennte Scripts erscheinen, die alte Kopie deaktivieren oder entfernen.
 
-1. Einen Userscript-Manager im Browser installieren und für die Spielseite aktivieren.
-2. Das [aktuelle Beta-Userscript](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js) über die Installationsfunktion des Managers hinzufügen.
-3. Im Userscript-Manager **Aktualisierungen prüfen** verwenden oder dessen automatische Updateprüfung aktivieren.
+## Projekt und Hinweise
 
-Die Desktop-Nutzung als Userscript wird derzeit gesondert erprobt. Die vorhandene Browser-Erweiterung als ZIP bleibt weiterhin verfügbar.
+Der Companion führt keine automatisierten Käufe, Verkäufe oder Ausrüstungswechsel durch. Preis- und Itembewertungen bleiben unverbindliche Hilfen auf Basis verfügbarer Spielinformationen.
 
-**Wichtig:** Nicht gleichzeitig die native M2Idle-Companion-Erweiterung und das Userscript auf derselben Spielseite aktivieren. Auch Beta und Stable dürfen nicht parallel laufen.
+M2Idle Companion ist ein unabhängiges Projekt ohne offizielle Verbindung zum Betreiber von M2Idle. Es gelten die Nutzungsbedingungen des Spiels.
 
-Verfügbare Downloads stehen direkt im jeweiligen Kanalverzeichnis.
-
-## Über das Projekt
-
-M2Idle Companion ergänzt die Spieloberfläche um optionale Hilfen zur Marktsuche, Preisübersicht und Ausrüstungsbewertung. Es werden keine automatischen Käufe oder Verkäufe durchgeführt.
-
-M2Idle Companion ist ein unabhängiges Community-Projekt und steht in keiner offiziellen Verbindung zum Betreiber von M2Idle.
+[Releases](https://github.com/Blacksonny/M2Idle-Companion/releases) · [Quellprojekt](https://github.com/Blacksonny/M2Idle-Companion) · [Stable-Kanal](stable/) · [Beta-Kanal](beta/)
