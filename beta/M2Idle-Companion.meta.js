@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         M2Idle Companion · Safari (Beta)
+// @name         M2Idle Companion
 // @namespace    https://github.com/Blacksonny/M2Idle-Companion/userscripts/beta
-// @version      1.7.4
+// @version      1.7.5
 // @description  Marktpreise, Ausrüstungsberatung und Build Lab für M2Idle
 // @match        https://game.m2idle.pl/*
 // @run-at       document-start
