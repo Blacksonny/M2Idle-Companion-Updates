@@ -27,4 +27,4 @@ Der Companion führt keine automatisierten Käufe, Verkäufe oder Ausrüstungswe
 
 M2Idle Companion ist ein unabhängiges Projekt ohne offizielle Verbindung zum Betreiber von M2Idle. Es gelten die Nutzungsbedingungen des Spiels.
 
-[Releases](https://github.com/Blacksonny/M2Idle-Companion/releases) · [Quellprojekt](https://github.com/Blacksonny/M2Idle-Companion) · [Stable-Kanal](stable/) · [Beta-Kanal](beta/)
+[Stable-Kanal](stable/) · [Beta-Kanal](beta/) · [Violentmonkey](https://violentmonkey.github.io/get-it/)
