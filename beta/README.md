@@ -1,13 +1,19 @@
 # M2Idle Companion – Beta
 
-Dieser Kanal bietet die neueste **Testversion** für Safari Userscripts auf iPhone/iPad und für Violentmonkey in Chromium-Browsern am PC.
+**Aktuell veröffentlichte Version: 1.8.2**
 
-**[Beta-Userscript installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js)**
+**Name in Safari Userscripts und Violentmonkey:** `M2Idle Companion (Beta)`
 
-Neue Versionen lassen sich über **Check Updates** in Userscripts beziehungsweise über die Updateprüfung von Violentmonkey abrufen. Die technischen Versionsinformationen stehen in [M2Idle-Companion.meta.js](M2Idle-Companion.meta.js).
+**[Beta installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js)**
 
-Innerhalb aktueller Beta-Pakete lassen sich zusätzliche Build-Lab-Werkzeuge im **Standard-/Testfunktionsmodus** ein- oder ausblenden. Dieser Modus ist **kein Wechsel des installierten Releasekanals**.
+Neue Funktionen für freiwillige Tests. Die Version wird bei jeder erfolgreichen Veröffentlichung automatisch aus der **tatsächlich ausgelieferten** [Metadatendatei](M2Idle-Companion.meta.js) übernommen.
 
-**Bei der einmaligen Umbenennung** von `M2Idle Companion · Safari (Beta)` auf `M2Idle Companion` bitte die Scriptliste prüfen. Wenn der Manager beide Einträge getrennt führt, die ältere Installation deaktivieren oder entfernen. Beta und Stable sowie die separate Companion-Extension dürfen nie parallel auf derselben Spielseite aktiviert sein.
+## Benutzung
 
-[Stable-Kanal](../stable/) · [Alle Releases](https://github.com/Blacksonny/M2Idle-Companion/releases)
+Auf iPhone/iPad mit **Safari Userscripts** oder am PC mit **Violentmonkey** installieren. Weitere Updates über den Userscript-Manager beziehen.
+
+Es gibt **keinen zusätzlichen Funktionsmodus**. Entscheide direkt über die Stable- bzw. Beta-Installation, welchen Funktionsumfang du nutzt. Vor einem Kanalwechsel die alte Ausgabe deaktivieren oder entfernen; **nicht beide Versionen parallel aktivieren**. Das gilt auch für eine eventuell separat installierte Companion-Browsererweiterung.
+
+Nach einer Scriptnamen-Änderung können alte Einträge übrig bleiben. In diesem Fall den älteren Eintrag deaktivieren und Version/Kanal in den Companion-Einstellungen kontrollieren.
+
+[Anderen Kanal ansehen](../stable/) · [Alle Versionen](https://github.com/Blacksonny/M2Idle-Companion/releases)
