@@ -7,7 +7,7 @@ Offizielle Update-Dateien des unabhängigen **M2Idle Companion** für [M2Idle](h
 | Kanal | Aktuelle Version | Name im Userscript-Manager | Installation |
 | --- | --- | --- | --- |
 | **Stable** | **1.7.9** | `M2Idle Companion (Stable)` | [Stable installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/stable/M2Idle-Companion.user.js) |
-| **Beta** | **1.8.12** | `M2Idle Companion (Beta)` | [Beta installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js) |
+| **Beta** | **1.8.13** | `M2Idle Companion (Beta)` | [Beta installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/beta/M2Idle-Companion.user.js) |
 
 Die Versionsangaben werden bei **jeder erfolgreich veröffentlichten Stable- oder Beta-Ausgabe automatisch direkt aus den jeweiligen `@version`-Metadaten** aktualisiert. Die beiden Kanäle haben eigene `@updateURL`- und `@downloadURL`-Adressen.
 
