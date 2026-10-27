@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         M2Idle Companion (Stable)
 // @namespace    https://github.com/Blacksonny/M2Idle-Companion/userscripts/stable
-// @version      1.7.7
+// @version      1.7.8
 // @description  Marktpreise, Ausrüstungsberatung und Build Lab für M2Idle
 // @match        https://game.m2idle.pl/*
 // @run-at       document-start
