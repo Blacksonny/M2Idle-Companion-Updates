@@ -1,6 +1,6 @@
 # M2Idle Companion – Beta
 
-**Aktuell veröffentlichte Version: 1.8.2**
+**Aktuell veröffentlichte Version: 1.8.3**
 
 **Name in Safari Userscripts und Violentmonkey:** `M2Idle Companion (Beta)`
 
