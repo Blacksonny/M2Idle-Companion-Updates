@@ -1,6 +1,6 @@
 # M2Idle Companion – Stable
 
-**Aktuell veröffentlichte Version: 1.7.8**
+**Aktuell veröffentlichte Version: 1.7.9**
 
 **Name in Safari Userscripts und Violentmonkey:** `M2Idle Companion (Stable)`
 
