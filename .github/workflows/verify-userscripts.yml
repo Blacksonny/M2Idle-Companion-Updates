@@ -6,11 +6,13 @@ on:
     paths:
       - 'beta/**'
       - 'stable/**'
+      - 'README.md'
       - '.github/workflows/verify-userscripts.yml'
   pull_request:
     paths:
       - 'beta/**'
       - 'stable/**'
+      - 'README.md'
       - '.github/workflows/verify-userscripts.yml'
 
 permissions:
@@ -33,6 +35,7 @@ jobs:
           import re
 
           repository = "Blacksonny/M2Idle-Companion-Updates"
+          releases = {}
           for channel in ("beta", "stable"):
               root = Path(channel)
               script = root / "M2Idle-Companion.user.js"
@@ -55,7 +58,21 @@ jobs:
               assert "// @match        https://game.m2idle.pl/*" in meta, "Nicht erwartete Domain"
               assert "// @grant        none" in meta, "Unerwartete Berechtigungen"
               assert "@require" not in meta, "Remote-Lader nicht zulässig"
-              assert re.search(r"(?m)^// @version\s+\d+\.\d+\.\d+$", meta), "Version fehlt"
+              version_match = re.search(r"(?m)^// @version\s+(\d+\.\d+\.\d+)$", meta)
+              assert version_match, "Version fehlt"
+              version = version_match.group(1)
+              expected_name = f"M2Idle Companion ({channel.capitalize()})"
+              assert f"// @name         {expected_name}" in meta, (
+                  f"{channel}: falscher angezeigter Kanalname"
+              )
+              releases[channel] = version
+              channel_readme = (root / "README.md").read_text(encoding="utf-8")
+              assert f"**Aktuell veröffentlichte Version: {version}**" in channel_readme, (
+                  f"{channel}: README-Version ist nicht die ausgelieferte @version {version}"
+              )
+              assert f"`{expected_name}`" in channel_readme, (
+                  f"{channel}: README hat falschen Installationsnamen"
+              )
               base = f"https://raw.githubusercontent.com/{repository}/main/{channel}"
               assert f"// @updateURL    {base}/M2Idle-Companion.meta.js" in meta
               assert f"// @downloadURL  {base}/M2Idle-Companion.user.js" in meta
@@ -63,6 +80,14 @@ jobs:
               for invalid in ("-----BEGIN PRIVATE KEY-----", "-----BEGIN RSA PRIVATE KEY-----"):
                   assert invalid not in full, "Verdacht auf privaten Schlüssel"
               print(f"{channel}: Versionsangaben, Metadaten und Downloadpfade geprüft")
+          overview = Path("README.md").read_text(encoding="utf-8")
+          for channel, version in releases.items():
+              title = channel.capitalize()
+              expected_row = f"| **{title}** | **{version}** | `M2Idle Companion ({title})` |"
+              assert expected_row in overview, (
+                  f"README: {channel} muss @version {version} aus der ausgelieferten Metadatei anzeigen"
+              )
+          print("README und beide Kanal-READMEs mit den ausgelieferten Scriptversionen abgeglichen")
           PY
           for channel in beta stable; do
             if [[ -f "$channel/M2Idle-Companion.user.js" ]]; then
