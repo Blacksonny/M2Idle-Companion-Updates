@@ -1,19 +1,19 @@
 # M2Idle Companion – Stable
 
-**Aktueller regulärer Release: 1.6.0**
+**Aktuell veröffentlichte Version: 1.7.8**
 
-Der stabile Updatekanal enthält die freigegebene Version für Safari Userscripts sowie Userscript-Manager in Chromium-Browsern.
+**Name in Safari Userscripts und Violentmonkey:** `M2Idle Companion (Stable)`
 
-## Installation
+**[Stable installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/stable/M2Idle-Companion.user.js)**
 
-**[M2Idle Companion 1.6.0 für Safari und Chromium installieren](https://raw.githubusercontent.com/Blacksonny/M2Idle-Companion-Updates/main/stable/M2Idle-Companion.user.js)**
+Regulär freigegebene Funktionen. Die Version wird bei jeder erfolgreichen Veröffentlichung automatisch aus der **tatsächlich ausgelieferten** [Metadatendatei](M2Idle-Companion.meta.js) übernommen.
 
-- **iPhone/iPad:** Die Datei mit der Safari-Erweiterung **Userscripts** installieren.
-- **Chrome/Edge/Brave:** Einen Userscript-Manager wie **Violentmonkey** verwenden und die Installationsdatei über dessen Installationsfunktion hinzufügen.
-- **Spätere Updates:** Über **Check Updates** beziehungsweise die Updateprüfung des jeweiligen Userscript-Managers beziehen.
+## Benutzung
 
-Die Metadatendatei [M2Idle-Companion.meta.js](M2Idle-Companion.meta.js) enthält die Prüfinformationen für den Stable-Kanal.
+Auf iPhone/iPad mit **Safari Userscripts** oder am PC mit **Violentmonkey** installieren. Weitere Updates über den Userscript-Manager beziehen.
 
-**Wichtig:** Eine vorhandene Beta-Installation wird nicht automatisch in die Stable-Version umgewandelt. Bitte die Beta vorher deaktivieren oder entfernen. Auch die separate Companion-Browser-Erweiterung darf nicht gleichzeitig auf derselben Spielseite aktiv sein.
+Es gibt **keinen zusätzlichen Funktionsmodus**. Entscheide direkt über die Stable- bzw. Beta-Installation, welchen Funktionsumfang du nutzt. Vor einem Kanalwechsel die alte Ausgabe deaktivieren oder entfernen; **nicht beide Versionen parallel aktivieren**. Das gilt auch für eine eventuell separat installierte Companion-Browsererweiterung.
 
-Diese Freigabe wurde automatisiert auf Syntax und Paketintegrität geprüft. Reale Browser- und Spieltests stehen teilweise noch aus.
+Nach einer Scriptnamen-Änderung können alte Einträge übrig bleiben. In diesem Fall den älteren Eintrag deaktivieren und Version/Kanal in den Companion-Einstellungen kontrollieren.
+
+[Anderen Kanal ansehen](../beta/) · [Alle Versionen](https://github.com/Blacksonny/M2Idle-Companion/releases)
